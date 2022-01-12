@@ -34,6 +34,9 @@ function App() {
       <div className="">
           <header className="">
               <h1>Soundbreak</h1>
+
+              <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
               {!token ?
                   <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login
                       to Spotify</a>
